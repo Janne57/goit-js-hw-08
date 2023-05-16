@@ -11,7 +11,7 @@ import throttle from 'lodash.throttle'
 
     player.getVideoTitle().then(function(title) {
         console.log('title:', title);
-        const saveTime = localStorage.getItem("videoplayer-current-time");
+        const saveTime = localStorage.getItem("videoplayer-current-time") || 0;
         const parseTime = JSON.parse(saveTime);
         // console.log("parseTime", parseTime);
         // console.log("parseTime.seconds", parseTime.seconds);
