@@ -1,6 +1,6 @@
 import throttle from 'lodash.throttle'
 
-let formData = JSON.parse(localStorage.getItem("feedback-form-state")) || {};
+let formData = JSON.parse(localStorage.getItem("feedback-form-state")) || {email: '', message: '',};
 // console.log('formData', formData);
 
 const refs = {
